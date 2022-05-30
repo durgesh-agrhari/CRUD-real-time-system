@@ -1,5 +1,6 @@
 {
   "name": "users",
+  "homepage": "https://durgesh-agrhari.github.io/CRUD-real-time-system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "axios": "0.19.2",
     "bootstrap": "4.4.1",
     "concurrently": "5.1.0",
+    "gh-pages": "^4.0.0",
     "json-server": "0.16.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -16,7 +18,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
+    "homepage": "https://durgesh-agrhari.github.io/CRUD-real-time-system",
     "json-server": "json-server --watch db.json --port 3003",
     "start:dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
